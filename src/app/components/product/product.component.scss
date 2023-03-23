@@ -1,0 +1,45 @@
+.card {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 400px;
+  padding: 24px;
+  border: 1px solid lightcoral;
+  margin: 12px;
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .card-info {
+    margin-left: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h2, h3 {
+      margin: 0;
+      padding: 6px 0;
+    }
+
+    button {
+      width: 120px;
+      margin-top: 24px;
+      padding: 8px;
+      font-size: 1.1rem;
+      border-radius: 20px;
+      background: beige;
+      color: coral;
+      border: thin solid coral;
+      box-shadow: 0 0 12px coral;
+      cursor: pointer;
+    }
+
+    button:hover {
+      box-shadow: none;
+    }
+  }
+
+}

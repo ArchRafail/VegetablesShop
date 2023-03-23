@@ -1,0 +1,11 @@
+<ng-template [ngIf]="product">
+  <div *ngIf="product.amount" class="card">
+    <img src="{{product.image ? product.image : 'https://img.freepik.com/free-icon/photo_318-784022.jpg'}}" alt="{{product.name ? product.name : 'No name'}}">
+    <div class="card-info">
+      <h2>{{product.name ? product.name : 'No name'}}</h2>
+      <h3>${{product.price ? product.price : 0.00}}</h3>
+      <h3>{{product.amount}} kg.</h3>
+      <button (click)="onBuyClick()"><fa-icon [icon]="sack"></fa-icon> Buy</button>
+    </div>
+  </div>
+</ng-template>
